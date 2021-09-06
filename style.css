@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    width: 30%;
+    display: none;
+}
+li a:hover hr{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+}
+li a{
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 60%;
+    margin: 5% 0 0 5%;
+    z-index: 2;
+    height: 5%;
+    align-items: center;
+    background-color: transparent;
+}
+.nav img{
+    width: 20%;
+    height: 100%;
+}
+.top{
+    display: flex;
+    height: 65vh;
+}
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.topRight{
+    width: 45%;
+    padding: 5% 7%;
+    box-sizing: border-box;
+}
+.controls{
+    position: absolute;
+    top: 89%;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 11%;
+}
+.controls span{
+    margin: 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 100%;
+}
+.controls span:hover{
+    cursor: pointer;
+    background-color: #444444;
+}
+.controls img{
+    width: 20%;
+}
+.slider{
+    min-width: 100%;
+    background-size: 100% 100%;
+    height: 100%;
+    transition: .5s linear;
+}
+.slider:first-of-type{
+    background-image: url('./images/desktop-image-hero-1.jpg');
+}
+.slider:nth-of-type(2){
+    background-image: url('./images/desktop-image-hero-2.jpg');
+}
+.slider:nth-of-type(3){
+    background-image: url('./images/desktop-image-hero-3.jpg');
+}
+.topLeft{
+    width: 70%;
+    position: relative;
+}
+.topRight p{
+    color: hsl(0, 0%, 63%);
+    font-size: 14px;
+}
+.topRight h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+.now{
+    letter-spacing: 10px;
+}
+.now:hover{
+    color: hsl(0, 0%, 63%);
+    cursor: pointer;
+}
+.bot{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+.bot>*{
+    height: 35vh;
+}
+.bot img{
+    width: 100%;
+    height: 100%;
+}
+.botMid{
+    padding: 2%;
+    width: 40%;
+    box-sizing: border-box;
+}
+.botLeft{
+    width: 30%;
+}
+.botRight{
+    width: 30%;
+}
+.botMid p{
+    font-size: 14px;
+    color: hsl(0, 0%, 63%);
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: hsl(0, 0%, 63%);
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  .mobile{
+      position: absolute;
+      width: 100%;
+      padding-top: 5%;
+      padding-left: 3%;
+      display: none;
+}
+.logo{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    width: 100vw;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: -3%;
+    display: none;
+    justify-content: flex-end;
+    height: 140%;
+    background-color: white;
+    align-items: center;
+}
+.items{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.items a{
+    color: black;
+}
+.cover{
+    position: fixed;
+    z-index: 3;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.5);
+}
+@media screen and (max-width:1020px) {
+    .top{
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+    .topLeft{
+        width: 100%;
+        height: 50vh;
+    }
+    .topRight{
+        width: 100%;
+    }
+    .bot{
+        flex-direction: column;
+    }
+    .bot>*{
+        width: 100%;
+    }
+    .controls{
+        left: 85%;
+        width: 15%;
+    }
+    .bot>*{
+        height: 50vh;
+    }
+    .botMid{
+        height: auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .nav{
+        display: none;
+    }
+    .topLeft{
+        width: 100%;
+        height: 50vh;
+    }
+    .slider:first-of-type{
+        background-image: url('./images/mobile-image-hero-1.jpg');
+    }
+    .slider:nth-of-type(2){
+        background-image: url('./images/mobile-image-hero-2.jpg');
+    }
+    .slider:nth-of-type(3){
+        background-image: url('./images/mobile-image-hero-3.jpg');
+    }
+    .controls{
+        top: 85%;
+        height: 15%;
+        width: 25%;
+        left: 75%;
+    }
+    .mobile{
+        display: flex;
+    }
+    .links{
+        display: flex;
+        z-index: 18;
+        transition: .5s linear;
+        transform: translateX(-100%);
+    }
+    a{
+        font-weight: 900;
+        font-size: 13px;
+    }
+}
