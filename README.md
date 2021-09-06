@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: i couldn't submit sulution because i used firebase hosting for 
+- Live Site URL: [live site](https://room-homepage-d051f.web.app/)
 
 ## My process
 
